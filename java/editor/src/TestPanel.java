@@ -9,6 +9,7 @@ import editor.shapes.Circle;
 import editor.shapes.CompositeShape;
 import editor.shapes.Image;
 import editor.shapes.Rectangle;
+import editor.shapes.Shape;
 
 public class TestPanel extends JPanel {
 
@@ -16,15 +17,15 @@ public class TestPanel extends JPanel {
 
 	public void paintComponent(Graphics g) {
 		Canvas canvas = new Canvas();
-		Rectangle r = new Rectangle(1, 1, 100, 100);
-		Circle c = new Circle(200, 200, 50);
-		CompositeShape cs = new CompositeShape();
+		Shape r = new Rectangle(1, 1, 100, 100);
+		Shape c = new Circle(200, 200, 50);
+		Shape cs = new CompositeShape();
 		cs.addShape(r);
 		cs.addShape(c);
 		canvas.addShape(cs);
-		canvas.move(cs, 10, 10);
-
-		Image i = new Image("java.jpg", 500, 500);
+		canvas.move(cs, 200, 200);
+		
+		Shape i = new Image("java.jpg", 500, 500);
 		canvas.addShape(i);
 
 		g.setColor(Color.red);

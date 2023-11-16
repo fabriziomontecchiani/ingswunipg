@@ -220,7 +220,7 @@
 											"top": 530,
 											"width": 209.8916015625,
 											"height": 13,
-											"text": "+getSide(s: Side): MapSite",
+											"text": "+getSide(s: Side): null",
 											"horizontalAlignment": 0
 										},
 										{
@@ -237,7 +237,7 @@
 											"top": 545,
 											"width": 209.8916015625,
 											"height": 13,
-											"text": "+setSide(s: Side, ms: MapSite): void",
+											"text": "+setSide(s: Side, ms): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -993,7 +993,7 @@
 											"top": 297,
 											"width": 116.34619140625,
 											"height": 13,
-											"text": "EASTH",
+											"text": "EAST",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1010,7 +1010,7 @@
 											"top": 312,
 											"width": 116.34619140625,
 											"height": 13,
-											"text": "WESTH",
+											"text": "WEST",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2675,9 +2675,9 @@
 										"$ref": "AAAAAAGKQPeMXT37+p0="
 									},
 									"font": "Arial;13;0",
-									"left": 623,
+									"left": 622,
 									"top": 578,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -3003,9 +3003,6 @@
 									"_parent": {
 										"$ref": "AAAAAAGKQOobBQGTBcY="
 									},
-									"type": {
-										"$ref": "AAAAAAGKQObfCABMcBA="
-									},
 									"direction": "return"
 								}
 							]
@@ -3035,10 +3032,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGKQOpMtQGezjU="
 									},
-									"name": "ms",
-									"type": {
-										"$ref": "AAAAAAGKQObfCABMcBA="
-									}
+									"name": "ms"
 								},
 								{
 									"_type": "UMLParameter",
@@ -3356,7 +3350,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGKQOj7GAFFULY="
 							},
-							"name": "EASTH"
+							"name": "EAST"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -3364,7 +3358,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGKQOj7GAFFULY="
 							},
-							"name": "WESTH"
+							"name": "WEST"
 						}
 					]
 				},
@@ -3664,7 +3658,7 @@
 											"top": 642,
 											"width": 209.8916015625,
 											"height": 13,
-											"text": "+getSide(s: Side): MapSite",
+											"text": "+getSide(s: Side): null",
 											"horizontalAlignment": 0
 										},
 										{
@@ -3681,7 +3675,7 @@
 											"top": 657,
 											"width": 209.8916015625,
 											"height": 13,
-											"text": "+setSide(s: Side, ms: MapSite): void",
+											"text": "+setSide(s: Side, ms): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -5107,9 +5101,9 @@
 										"$ref": "AAAAAAGKQPeMXT37+p0="
 									},
 									"font": "Arial;13;0",
-									"left": 1202,
+									"left": 1201,
 									"top": 689,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -6220,7 +6214,7 @@
 											"top": 369,
 											"width": 86.72802734375,
 											"height": 13,
-											"text": "EASTH",
+											"text": "EAST",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6237,7 +6231,7 @@
 											"top": 384,
 											"width": 86.72802734375,
 											"height": 13,
-											"text": "WESTH",
+											"text": "WEST",
 											"horizontalAlignment": 0
 										}
 									],

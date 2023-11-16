@@ -31,6 +31,8 @@ public class Test {
 		ra.enter();
 		ra.getSide(Side.NORTH).enter();
 		ra.getSide(Side.WEST).enter();
+		ra.getSide(Side.WEST).enter();
+		ra.getSide(Side.WEST).enter();
 	}
 
 }
