@@ -16,7 +16,6 @@ public class Image extends PrimitiveShape {
 		this.path = path;
 		this.x = x;
 		this.y = y;
-		this.path = path;
 	}
 
 	public void draw(Graphics g) {
