@@ -21,4 +21,8 @@ public class ElementoOrdine {
 	public void aggiungi(int quantit‡Aggiunta) {
 		this.quantit‡ += quantit‡Aggiunta;
 	}
+	
+	public float getPrezzoElemento() {
+		return getQuantit‡() * getProdotto().getPrezzo();
+	}
 }

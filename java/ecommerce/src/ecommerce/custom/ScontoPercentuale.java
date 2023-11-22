@@ -13,7 +13,7 @@ public class ScontoPercentuale implements Sconto {
 
 	@Override
 	public float applica(Ordine ordine) {
-		return ordine.calcolaTotaleEuro() * this.percentualeSconto;
+		return ordine.calcolaTotaleEuro() * (1 - this.percentualeSconto);
 	}
 
 }

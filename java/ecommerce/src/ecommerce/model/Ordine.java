@@ -50,7 +50,7 @@ public abstract class Ordine {
 	public float calcolaTotaleEuro() {
 		float tot = 0;
 		for(ElementoOrdine eo:elementi) {
-			float prezzo = eo.getProdotto().getPrezzo() * eo.getQuantità();
+			float prezzo = eo.getPrezzoElemento();
 			tot += prezzo;
 		}
 		return tot;
