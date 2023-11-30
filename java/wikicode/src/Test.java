@@ -1,4 +1,5 @@
 import wikicode.model.BoldText;
+import wikicode.model.DocumentPart;
 import wikicode.model.Hyperlink;
 import wikicode.model.Parser;
 import wikicode.model.PlainText;
@@ -12,12 +13,12 @@ public class Test {
 		WikiCodeDoc doc = new WikiCodeDoc(new EmptyState());
 		System.out.println(doc.getStatus().toString()+", can be closed: "+doc.canClose());
 
-		BoldText title = new BoldText();
+		DocumentPart title = new BoldText();
 		title.setText("SOME TITLE: ");
 		Hyperlink link = new Hyperlink();
 		link.setText("MY PAGE");
 		link.setUrl("https://www.google.it");
-		PlainText text = new PlainText();
+		DocumentPart text = new PlainText();
 		text.setText(" BYE BYE ");
 		doc.addPart(title);
 		doc.addPart(link);

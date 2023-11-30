@@ -14,12 +14,12 @@ public class HTMLParser implements Parser{
 
 	@Override
 	public String parse(BoldText part) {
-		return part.getText();
+		return "<b>" + part.getText() + "</b>";
 	}
 
 	@Override
 	public String parse(Hyperlink part) {
-		return part.getText()+" ["+part.getUrl()+"]";
+		return "<a href=\"" + part.getUrl() + "\">" + part.getText() + "</a>";
 	}
 
 }

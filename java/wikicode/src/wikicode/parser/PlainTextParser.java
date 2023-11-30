@@ -14,12 +14,12 @@ public class PlainTextParser implements Parser {
 
 	@Override
 	public String parse(BoldText part) {
-		return "<b>" + part.getText() + "</b>";
+		return part.getText();
 	}
 
 	@Override
 	public String parse(Hyperlink part) {
-		return "<a href=\"" + part.getUrl() + "\">" + part.getText() + "</a>";
+		return part.getText()+" ["+part.getUrl()+"]";
 	}
 
 }
